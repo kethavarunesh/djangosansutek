@@ -6,6 +6,10 @@ class Contactform(models.Model):
     phone=models.CharField( max_length=50)
     message = models.TextField()
 
+
+def __str__(self):
+    return f"{self.name}"
+
 class ResumeSubmission(models.Model):
     name = models.CharField(max_length=255)
     last_name = models.CharField(max_length=255)
